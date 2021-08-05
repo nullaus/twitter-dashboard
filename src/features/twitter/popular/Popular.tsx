@@ -38,7 +38,6 @@ export function Popular() {
     }
   };
 
-  console.log(popular);
   return (
     <Container maxWidth="lg">
       <AppBar className={classes.header} position="sticky">

@@ -16,11 +16,6 @@ function newRequestGet(path: string) {
 }
 
 export function getTimelineUsingHandle(handle: string) {
-  console.log(`fetching timeline using handle ${handle}`);
-
   const path = `twitter/recent/search/${handle}`;
-  let req = newRequestGet(path);
-  console.log(req);
-
-  return fetch(req);
+  return fetch(newRequestGet(path));
 }
